@@ -1,14 +1,14 @@
 # Profile-LLM
 
-Standalone, minimal LLM profiling workflow extracted from `gpu-power-experiments/examples/llm`.
+Standalone, minimal LLM profiling workflow based on [https://gite.lirmm.fr/adac/gpu-power-experiments/-/tree/0fccdcbbe9f8dbc0ee4f75cfd5fa4e5964b3ec03/examples/llm]().
 
-This duplicate keeps:
+Workflow features:
 - PyTorch split JSON tracing (`prefill`, `decode_i`)
 - Nsight Compute (NCU) per-range CSV profiling
 - Optional post-processing from `.pt.trace.json` into `*.csv` and `*_summary.csv`
 - Optional summary plotting for `aten::mm` memory accesses (default: enabled)
 
-This duplicate intentionally removes:
+This workflow intentionally removes:
 - Power profiling
 - Docker workflow
 
